@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+[data-theme="dark"] {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #141414;
+  --border-color: #2a2a2a;
+  --accent-orange: #e8a020;
+  --accent-gold: #f0c040;
+  --accent-green: #4caf50;
+  --text-primary: #e0d8c8;
+  --text-secondary: #888;
+  --text-dim: #555;
+  --red: #c0392b;
+  --blue: #2980b9;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f0ede8;
+  --bg-secondary: #e0dbd4;
+  --bg-card: #faf8f5;
+  --border-color: #ccc8c0;
+  --accent-orange: #c87010;
+  --accent-gold: #b08020;
+  --accent-green: #2e7d32;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --text-dim: #999;
+  --red: #c0392b;
+  --blue: #1565c0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Rajdhani', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-orange);
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+}

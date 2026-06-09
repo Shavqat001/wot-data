@@ -1,0 +1,47 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-layout {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 28px;
+  overflow-y: auto;
+}
+
+.page-transition {
+  animation: pageIn 0.3s ease;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 12px;
+}
+
+.cs-icon { font-size: 48px; }
+.cs-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  letter-spacing: 6px;
+  color: var(--text-primary);
+}
+.cs-sub {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: var(--text-dim);
+}

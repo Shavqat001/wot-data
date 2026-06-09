@@ -1,0 +1,109 @@
+.tank-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.tank-card:hover {
+  border-color: var(--accent-orange);
+  transform: translateY(-2px);
+}
+
+.tank-card.in-garage {
+  border-color: rgba(240, 192, 64, 0.3);
+}
+
+.tank-card-garage-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  z-index: 2;
+  filter: drop-shadow(0 0 4px rgba(240,192,64,0.8));
+}
+
+.tank-card:hover .tank-card-hover-overlay {
+  opacity: 1;
+}
+
+.tank-card-tier {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 2;
+  text-shadow: 0 0 8px currentColor;
+}
+
+.tank-card-img-wrap {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
+  overflow: hidden;
+}
+
+.tank-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.8));
+}
+
+.tank-card-no-img {
+  color: var(--text-dim);
+  font-size: 24px;
+}
+
+.tank-card-info {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.tank-card-name {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.tank-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tank-card-type {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.tank-card-nation {
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
+
+.tank-card-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 160, 32, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--accent-orange);
+  opacity: 0;
+  transition: opacity 0.2s;
+}

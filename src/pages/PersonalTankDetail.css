@@ -1,0 +1,68 @@
+.ptd-page { max-width: 900px; }
+
+.ptd-hero {
+  display: flex;
+  gap: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.ptd-img-wrap {
+  width: 240px;
+  min-height: 140px;
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.ptd-img { max-width: 100%; max-height: 140px; object-fit: contain; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.9)); }
+.ptd-no-img { color: var(--text-dim); font-size: 32px; }
+
+.ptd-info { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.ptd-tier { font-family: 'Orbitron', sans-serif; font-size: 10px; letter-spacing: 4px; color: var(--accent-orange); }
+.ptd-name { font-family: 'Orbitron', sans-serif; font-size: 24px; font-weight: 700; color: var(--text-primary); }
+.ptd-tags { display: flex; gap: 8px; }
+.tag { font-size: 11px; letter-spacing: 2px; padding: 3px 10px; border: 1px solid var(--border-color); color: var(--text-secondary); }
+
+.ptd-winrate {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  padding: 10px 18px;
+  align-self: flex-start;
+  margin-top: auto;
+}
+.wr-num { font-family: 'Orbitron', sans-serif; font-size: 26px; font-weight: 700; line-height: 1; }
+.wr-label { font-size: 9px; letter-spacing: 2px; margin-top: 3px; opacity: 0.7; }
+
+.ptd-section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--accent-orange);
+  margin-bottom: 12px;
+}
+
+.ptd-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px;
+}
+
+.ptd-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 18px 14px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.ptd-stat-card:hover { border-color: var(--accent-orange); transform: translateY(-2px); }
+
+.ptd-stat-value { font-family: 'Orbitron', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+.ptd-stat-label { font-size: 9px; letter-spacing: 2px; color: var(--text-dim); }
+.ptd-no-stats { color: var(--text-secondary); padding: 24px 0; letter-spacing: 2px; }

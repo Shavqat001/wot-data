@@ -1,0 +1,124 @@
+.mygarage-page { max-width: 1200px; }
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  background: var(--accent-orange);
+  color: #000;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.garage-filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.garage-toggle {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 8px 18px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+.garage-toggle:hover { border-color: var(--accent-gold); color: var(--text-primary); }
+.garage-toggle.active {
+  background: rgba(240, 192, 64, 0.1);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-dim);
+  padding: 3px 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.logout-btn:hover { border-color: var(--red); color: var(--red); }
+
+/* LOGIN SCREEN */
+.login-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.login-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 48px 40px;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  animation: fadeIn 0.4s ease;
+}
+
+.login-icon { font-size: 48px; margin-bottom: 16px; }
+
+.login-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.login-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background: var(--accent-orange);
+  color: #000;
+  border: none;
+  padding: 14px 24px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  margin-bottom: 12px;
+}
+.login-btn:hover { background: var(--accent-gold); transform: translateY(-1px); }
+
+.login-note {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+}
